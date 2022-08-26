@@ -1,0 +1,95 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgba(0, 174, 255, 0.521), rgba(9, 9, 9, 0.432)), url(/map.JPG);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 10px 0;
+    letter-spacing: 10px;
+    color: blue;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center !important;
+    outline: none;
+    animation: animate 10s linear infinite;
+}
+
+
+@keyframes animate {
+
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: #6a2201;
+        text-shadow: none;
+    }
+
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #ffffff;
+        text-shadow: 0 0 10px #b84d1c,
+            0 0 20px #b84d1c,
+            0 0 40px #b84d1c,
+            0 0 80px #b84d1c,
+            0 0 160px #b84d1c;
+    }
+}
+
+
+.pBtn {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.pBtn p {
+    font-size: 30px;
+    margin: 40px;
+}
+
+#btn {
+    color: #ffffff;
+    background-color: transparent;
+    padding: 22px 25px;
+    border-radius: 15px;
+    border: none;
+    font-size: 27px;
+    padding: 10px;
+}
+
+#btn:hover {
+    color: #03bcf4;
+    background-color: #ffffff;
+    fill-opacity: 0.5;
+    cursor: pointer;
+}
