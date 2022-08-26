@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(to right, rgba(0, 174, 255, 0.521), rgba(9, 9, 9, 0.432)), url(../img/map.jpg);
+    background: linear-gradient(to right, rgba(0, 174, 255, 0.521), rgba(9, 9, 9, 0.432)), url("../img/map.jpg");
     background-size: cover;
     background-position: center;
 }
