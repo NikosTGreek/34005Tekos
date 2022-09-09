@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: 'Nova Square', cursive;
+}
+
+body {
+    background: linear-gradient(to right, rgba(0, 174, 255, 0.521), rgba(9, 9, 9, 0.432)), url("../img/map2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 4.2rem;
+    font-family: 'Aniron', sans-serif;
+    margin-bottom: 5rem;
+    color: blue;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+    animation: animate 10s linear infinite;
+}
+
+h2 {
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 4rem;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.521), rgba(9, 9, 9, 0.432));
+    background-size: cover;
+    background-position: center;
+}
+
+
+@keyframes animate {
+
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: #6a2201;
+        text-shadow: none;
+    }
+
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #ffffff;
+        text-shadow: 0 0 10px #b84d1c,
+            0 0 20px #b84d1c,
+            0 0 40px #b84d1c,
+            0 0 80px #b84d1c,
+            0 0 160px #b84d1c;
+    }
+}
+
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.btn {
+    color: #ffffff;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    font-size: 2.4rem;
+    padding: 2rem 0;
+    width: 30rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background: linear-gradient(to right, rgba(0, 174, 255, 0.521), rgba(9, 9, 9, 0.432));
+}
+
+.btn:hover {
+    color: #b84d1c;
+    background-color: #ffffff;
+    fill-opacity: 0.5;
+    transition: transform 150ms;
+    transform: scale(1.03);
+    cursor: pointer;
+}
