@@ -1,2 +1,2 @@
 # 34005Tekos
-Cuestionario Historia con JS (Simple)
+Cuestionario Historia con JS
