@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THE END</title>
-    <link rel="stylesheet" href="/34005Tekos/css/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/end.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 </head>
+
 <body>
     <div class="container">
         <div id="end" class="flex-center flex-column">
             <h1 id="finalScore">0</h1>
             <form class="end-form-container">
-                <h2 id="end-text">0-200 Puntos: Te recomiendo leer algunos libros sobre la historia universal 😕 <br><br> 300 Puntos: Necesita mejorar! 😉<br><br> 400 Puntos: No tan mal. Vas bien! 🧐 <br><br> 500 Puntos: EXCELENTE Señor/a Einstein!😎<br><br><br><br> Gracias por hacer el test.</h2>
+                <h2 id="end-text">¡Ingrese su nombre a continuación para guardar su puntaje!</h2>
+                <input type="text" name="name" id="username" placeholder="Enter your name">
+                <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)"
+                    disabled>Save</button>
             </form>
-            <a href="/34005Tekos/game.html" class="btn">Jugar de nuevo</a>
-            <a href="/34005Tekos/index.html" class="btn">Go Home<i class="fas fa-home"></i></a>
+            <a href="/game.html" class="btn">Jugar de nuevo</a>
+            <a href="/" class="btn">Vuelve al inicio<i class="fas fa-home"></i></a>
         </div>
     </div>
-    <script src="/34005Tekos/end.js"></script>
+    <script src="/end.js"></script>
 </body>
+
 </html>
