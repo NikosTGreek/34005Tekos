@@ -1,0 +1,57 @@
+body {
+    color: #fff;
+}
+
+#highScoresList {
+    list-style: none;
+    margin-bottom: 4rem;
+}
+
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: 'Aniron', sans-serif;
+    margin-bottom: 30rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+}
+
+@keyframes animate {
+
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: #000000;
+        text-shadow: none;
+    }
+
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+        color: #ffffff;
+        text-shadow: 0 0 10px #ffffff,
+            0 0 20px #ffffff,
+            0 0 40px #ffffff,
+            0 0 80px #000000,
+            0 0 160px #ffffff;
+    }
+}
