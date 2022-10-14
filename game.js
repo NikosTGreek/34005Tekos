@@ -10,52 +10,19 @@ let score = 0
 let questionCounter = 0
 let availableQuestions = []
 
-let questions = [
-    {
-        question:
-            "¿De dónde viene Napoleón Bonaparte?",
-        choice1: "Grecia",
-        choice2: "Italia",
-        choice3: "Francia-Córcega",
-        answer: 3,
-    },
-    {
-        question:
-            "¿Qué país atacó primero Adolf Hitler en la Segunda Guerra Mundial?",
-        choice1: "Francia",
-        choice2: "España",
-        choice3: "Polonia",
-        answer: 3,
+let questions = [];
 
-    },
-    {
-        question:
-            "¿Qué emperador romano legalizó el cristianismo y puso fin a la persecución de los cristianos?",
-        choice1: "Nerón",
-        choice2: "Constantino",
-        choice3: "Trajano",
-        answer: 2,
-
-    },
-    {
-        question:
-            "¿A través de qué río africano se alzó el antiguo Egipto?",
-        choice1: "Nilo",
-        choice2: "Amazonas",
-        choice3: "Tigris",
-        answer: 1,
-
-    },
-    {
-        question:
-            "Según las leyendas de la antiguedad, ¿quiénes fundaron a Roma?",
-        choice1: "Aquiles y Odiseo",
-        choice2: "Alejandro Magno y Ptolomeo",
-        choice3: "Rómulo y Remo",
-        answer: 3,
-
-    }
-]
+fetch('questions.json')
+    .then((res) => {
+        return res.json();
+    })
+    .then((loadedQuestions) => {
+        questions = loadedQuestions;
+        startGame();
+    })
+    .catch((err) => {
+        console.error(err);
+    });
 
 const SCORE_POINTS = 100
 const MAX_QUESTIONS = 5
