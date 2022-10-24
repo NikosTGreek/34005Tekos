@@ -13,7 +13,7 @@ let availableQuestions = []
 let questions = [];
 
 fetch('/34005Tekos/questions.json')
-    .then((res) => {
+    .then(res) => {
         return res.json();
     })
     .then((loadedQuestions) => {
