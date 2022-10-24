@@ -12,7 +12,7 @@ let availableQuestions = []
 
 let questions = [];
 
-fetch('/34005Tekos/questions.json')
+fetch('/questions.json')
     .then((res) => {
         return res.json();
     })
