@@ -1,5 +1,4 @@
-//const question = document.querySelector('#question');
-const question = document.getElementById('question')
+const question = document.querySelector('#question');
 const choices = Array.from(document.querySelectorAll('.choice-text'));
 const progressText = document.querySelector('#progressText');
 const scoreText = document.querySelector('#score');
@@ -13,7 +12,7 @@ let availableQuestions = []
 
 let questions = [];
 
-fetch('/questions.json')
+fetch('/34005Tekos/questions.json')
     .then((res) => {
         return res.json();
     })
