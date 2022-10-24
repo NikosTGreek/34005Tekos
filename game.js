@@ -24,8 +24,8 @@ fetch('questions.json')
         console.error(err);
     });
 
-const SCORE_POINTS = 100
-const MAX_QUESTIONS = 5
+const SCORE_POINTS = 70
+const MAX_QUESTIONS = 14
 
 startGame = () => {
     questionCounter = 0
