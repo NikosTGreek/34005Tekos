@@ -12,7 +12,7 @@ let availableQuestions = []
 
 let questions = [];
 
-fetch("/34005/questions.json")
+fetch("questions.json")
     .then(res => {
         return res.json();
     })
@@ -39,7 +39,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score)
 
-        return window.location.assign('/34005Tekos/end.html')
+        return window.location.assign("/34005Tekos/end.html")
     }
 
     questionCounter++
